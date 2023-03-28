@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <style>
+  html{
+    font-family:"Roboto", sans-serif ;
+  }
+        .navi{
+            background-color:#ceccd9;
+        }
+        .navi ul{
+            overflow: auto;
+        }
+        .navi li{
+            float: right;
+            list-style: none;
+            
+            
+        }
+        .navi li a{
+            padding: 2px;
+            text-decoration: none;
+           
+            
+        }
+        a:active{
+            color: bisque;
+        }
+      #img{
+        float: left;
+       
+      }
+      .logo img{
+        width: 10px;
+        height: 10px;
+        
+      }
+      .ele{
+        padding: 20px;
+        padding-top: 40px 0px 0px;
+      }
+      .main{
+        font-size: 24px;
+      }
+      
+
+      
+.sidebar {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -0.5;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px ;
+  border-radius: 15%;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: list-item;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.navi{
+  transition: margin-right .5s;
+}
+.main{
+  transition: margin-right .5s;
+  padding: 16px;
+}
+body{
+  background-image: url(https://cdn.wallpapersafari.com/35/60/g46fz9.jpg);
+}
+
+.body p{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 120px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.imgs{
+  padding: 20px;
+
+}
+.imgs img{
+  padding-top: 10px;
+  padding: 40px 120px;
+
+}
+      
+    </style>
+</head>
+<body>
+   <nav class="navi">
+       <ul>
+        <li id="img"><a class="navi" href="/"><div class="logo"><img src="https://as2.ftcdn.net/v2/jpg/00/72/97/89/1000_F_72978994_Djp0dstP6T6K4hOrRzPELKClDAHKxPz1.jpg" alt=""></div></a></li>
+       
+        <li class="ele">
+          <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">SignOut</a>
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>  </div>
+          <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "200px";
+              document.getElementById("main").style.marginRight = "100px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginRight= "0";
+            }
+            </script>
+
+        </li>
+        <li class="ele"><a href="./pitch.html" target="_blank">Add a pitch</a></li>
+        <li class="ele"> <a href="./investor.html" target="_blank"> Investor Search</a></li>
+        <li  class="ele" ><a href="./mentor.html" target="_blank">Mentor/Guidance</a> </li>
+    
+       </ul>
+   </nav>
+   
+   <div class="body">
+    <p>Request for Funds, Connect with Investors, Guidance from Mentors!</p>
+   </div>
+   <div class="imgs">
+    <img src="./get.jpg.png" alt="">
+    <img src="./connect.jpg" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyQnR3RaAFGNqwIwkCaSiOQbs9m8aSCMngQ&usqp=CAU" alt="">
+   </div>
+</body>
+</html>
